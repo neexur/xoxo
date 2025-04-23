@@ -1,0 +1,90 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: #131417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.border-hider {
+    width: 60vw; height: 60vw;
+    min-width: 270px; min-height: 270px;
+    max-width: 450px; max-height: 450px;
+    
+    border: solid 2px #131417;
+    
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  div.container {
+    width: 60vw; height: 60vw;
+    min-width: 270px; min-height: 270px;
+    max-width: 450px; max-height: 450px;
+    
+    user-select: none;
+    
+    &.won {
+      pointer-events: none;
+    }
+    
+    div.row {
+      height: 20vw; 
+      min-height: 90px;
+      max-height: 150px;
+      display: flex;
+  
+      button {
+        width: 20vw; height: 20vw;
+        min-width: 90px; min-height: 90px;
+        max-width: 150px; max-height: 150px;
+        border: solid 1px #fff2;
+        
+        cursor: pointer;
+        
+        color: #fff;
+        font-size: 3.8rem;
+        text-shadow: 0 2px 12px #fff8;
+        background: #0000;
+        
+        transition: .2s;
+        
+        &.dim {
+          opacity: .2;
+          text-shadow: none;
+        }
+        
+        &.wins {
+          color: #4CAF50;
+          text-shadow: 0 2px  12px #4CAF5088;
+        }
+      }
+    }
+  }
+  
+  button.restart {
+    position: absolute;
+    bottom: 40px;
+    
+    padding: 4px 12px;
+    font-size: 1.2rem;
+    background: #0000;
+    border: none;
+    color: #fff;
+    
+    cursor: pointer;
+    
+    transition: .1s;
+    
+    &.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }

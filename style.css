@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+body {
+  min-height: 100vh;
+  background: #131417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.border-hider {
+  width: 60vw;
+  height: 60vw;
+  min-width: 270px;
+  min-height: 270px;
+  max-width: 450px;
+  max-height: 450px;
+  border: solid 2px #131417;
+  position: absolute;
+  pointer-events: none;
+}
+
+div.container {
+  width: 60vw;
+  height: 60vw;
+  min-width: 270px;
+  min-height: 270px;
+  max-width: 450px;
+  max-height: 450px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+div.container.won {
+  pointer-events: none;
+}
+div.container div.row {
+  height: 20vw;
+  min-height: 90px;
+  max-height: 150px;
+  display: flex;
+}
+div.container div.row button {
+  width: 20vw;
+  height: 20vw;
+  min-width: 90px;
+  min-height: 90px;
+  max-width: 150px;
+  max-height: 150px;
+  border: solid 1px rgba(255, 255, 255, 0.1333333333);
+  cursor: pointer;
+  color: #fff;
+  font-size: 3.8rem;
+  text-shadow: 0 2px 12px rgba(255, 255, 255, 0.5333333333);
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2s;
+}
+div.container div.row button.dim {
+  opacity: 0.2;
+  text-shadow: none;
+}
+div.container div.row button.wins {
+  color: #4CAF50;
+  text-shadow: 0 2px 12px rgba(76, 175, 80, 0.5333333333);
+}
+
+button.restart {
+  position: absolute;
+  bottom: 40px;
+  padding: 4px 12px;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+button.restart.hide {
+  opacity: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
